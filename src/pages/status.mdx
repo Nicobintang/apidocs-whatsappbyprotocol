@@ -1,0 +1,36 @@
+export const description =
+  'On this page, we’ll dive into the different message endpoints you can use to manage messages programmatically.'
+
+# Status
+
+Messages are what conversations are made of in Protocol — they are the basic building blocks of your conversations with your Protocol contacts. On this page, we'll dive into the different message endpoints you can use to manage messages programmatically. We'll look at how to query, send, update, and delete messages. {{ className: 'lead' }}
+
+## Parameter
+
+The message model contains all the information about the messages and attachments you send to your contacts and groups, including how your contacts have reacted to them.
+
+### Properties
+
+<Properties>
+  <Property name="id" type="string">
+    Unique identifier for the attachment.
+  </Property>
+  <Property name="message_id" type="string">
+    Unique identifier for the message associated with the attachment.
+  </Property>
+  <Property name="filename" type="string">
+    The filename for the attachment.
+  </Property>
+  <Property name="file_url" type="string">
+    The URL for the attached file.
+  </Property>
+  <Property name="file_type" type="string">
+    The MIME type of the attached file.
+  </Property>
+  <Property name="file_size" type="integer">
+    The file size of the attachment in bytes.
+  </Property>
+  <Property name="created_at" type="timestamp">
+    Timestamp of when the attachment was created.
+  </Property>
+</Properties>
